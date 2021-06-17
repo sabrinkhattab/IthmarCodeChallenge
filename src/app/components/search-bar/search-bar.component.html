@@ -1,1 +1,26 @@
-<p>search-bar works!</p>
+<div class="search-bar-wrapper">
+    <div class="header">
+        Search Hotel
+    </div>
+    <div class="action">
+
+
+        <input type="date"
+               data-placeholder="Check in" 
+               class="custom-input" 
+               (change)="selectTime($event)"
+               name="check-in"
+              
+               />
+
+        <input 
+          type="date" 
+          placeholder="Check out" 
+          class="custom-input"
+          name="check-out"
+
+          />
+        <!-- <button></button> -->
+
+    </div>
+</div>

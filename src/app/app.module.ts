@@ -8,7 +8,8 @@ import { PriceFilterComponent } from './components/price-filter/price-filter.com
 import { CheckBoxFilterComponent } from './components/check-box-filter/check-box-filter.component';
 import { HotelsListComponent } from './components/hotels-list/hotels-list.component';
 import { HotelItemComponent } from './components/hotels-list/hotel-item/hotel-item.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { HotelItemComponent } from './components/hotels-list/hotel-item/hotel-it
   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

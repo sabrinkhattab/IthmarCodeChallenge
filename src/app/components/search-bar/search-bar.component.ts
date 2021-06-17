@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
+  
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectTime(event: any){
+    console.log(event.target.value)
   }
 
 }

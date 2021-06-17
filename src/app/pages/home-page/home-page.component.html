@@ -1,1 +1,17 @@
-<p>home-page works!</p>
+<div class="home-page-container">
+ <div class="flex-wrapper">
+     <div class="search-bar">
+         <app-search-bar></app-search-bar>
+     </div>
+     <div class="search-content">
+         <div class="filter-section">
+             <app-price-filter></app-price-filter>
+             <app-check-box-filter></app-check-box-filter>
+         </div>
+         <div class="results-list">
+             <app-hotels-list [hotels]="hotels"></app-hotels-list>
+         </div>
+     </div>
+
+ </div>
+</div>
