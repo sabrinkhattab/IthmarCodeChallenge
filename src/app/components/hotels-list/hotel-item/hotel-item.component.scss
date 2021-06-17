@@ -1,0 +1,21 @@
+@import "../../../../scss/variables";
+
+.hotel-item {
+    border: 1px solid $borders-color;
+    border-radius: 4px;
+    margin-top: 20px;
+
+    .hotel-name{
+        border-bottom: 1px solid $borders-color;
+        padding: 10px;
+        background-color: $headers-bg-color;
+        font-weight: 400;
+    }
+    .hotel-city{
+        border-bottom: 1px solid $borders-color;
+        padding: 10px;
+    }
+    .hotel-price{
+        padding: 10px;
+    }
+}

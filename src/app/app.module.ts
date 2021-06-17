@@ -9,7 +9,8 @@ import { CheckBoxFilterComponent } from './components/check-box-filter/check-box
 import { HotelsListComponent } from './components/hotels-list/hotels-list.component';
 import { HotelItemComponent } from './components/hotels-list/hotel-item/hotel-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import{HttpClientModule} from '@angular/common/http'
+import{HttpClientModule} from '@angular/common/http';
+import { SortBarComponent } from './components/hotels-list/sort-bar/sort-bar.component'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import{HttpClientModule} from '@angular/common/http'
     CheckBoxFilterComponent,
     HotelsListComponent,
     HotelItemComponent,
+    SortBarComponent,
   
   ],
   imports: [
