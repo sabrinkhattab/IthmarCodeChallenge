@@ -7,8 +7,10 @@ import {faSearch} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-  
-faSearch = faSearch;
+  @Output() searchHotels = new EventEmitter();
+  @Output() dates = new EventEmitter();
+
+  faSearch = faSearch;
 public checkIn!:Date ;
 public checkOut!:Date ;
 
@@ -22,8 +24,15 @@ public checkOut!:Date ;
     this.checkIn = event.target.value :
     this.checkOut = event.target.value
 
+  }
 
+  search(checkIn:Date , checkOut:Date){
+    let dates = { 'checkIn':checkIn , 'checkOut':checkOut }
+    this.searchHotels.emit(dates)
+    this.dates.emit(dates);
 
   }
+
+
 
 }

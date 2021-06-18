@@ -3,5 +3,6 @@ export interface Hotel {
     city: string;
     name:string;
     price:number;
-    available_on:Date
+    available_on:Date;
+    calculatedPrice:number
 }

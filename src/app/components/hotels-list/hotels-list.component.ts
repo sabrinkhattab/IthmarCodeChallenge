@@ -8,11 +8,24 @@ import { SortService } from 'src/app/services/sort.service';
 })
 export class HotelsListComponent implements OnInit {
 @Input() hotels !: Hotel[];
+@Input() totalNights!:number;
 
   constructor( private sortService : SortService) { }
 
   ngOnInit(): void {
   }
+  ngOnChanges()	{
+    if(this.totalNights){
+      this.hotels = this.hotels.map((item)=>{
+        item.calculatedPrice = item.price * this.totalNights;
+        return item;
+      })
+    }
+    console.log("ngOnChanges")
+
+  }
+  
+
 
   sortPriceAscending(){
    this.hotels = this.sortService.sortPriceAscending(this.hotels)
@@ -32,6 +45,8 @@ export class HotelsListComponent implements OnInit {
     this.hotels = this.sortService.sortZAnames(this.hotels)
  
    }
+
+
 
 }
 

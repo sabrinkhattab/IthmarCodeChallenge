@@ -13,14 +13,6 @@
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        // input::-webkit-calendar-picker-indicator {
-        //     // padding-left: 100px;
-        //     // border: 1px dashed red;
-        //   }
-        //   input::-webkit-calendar-picker-indicator {
-        //        color: orange; 
-        //        width: 100%;
-        //     }
         .custom-input::-webkit-calendar-picker-indicator {
             cursor: pointer;
         
@@ -52,4 +44,5 @@
         align-self: center;
         cursor: pointer;
     }
+ 
 }
