@@ -1,1 +1,38 @@
-<p>check-box-filter works!</p>
+<div  class="checkbox-filter-wrapper"> 
+ <div class="city-filter ">
+     <div class="type">
+        City Name
+     </div>
+     <div *ngFor="let city of cities" class="checkbox-item">
+        <label>
+        <input type="checkbox"
+               name="cities"
+               value="{{city.value}}"
+               [(ngModel)]="city.checked"
+               (change)="onCityFilter()"
+               />
+        {{city.name}}
+      </label>
+    </div>
+
+
+ </div>
+ <div class="name-filter ">
+     <div class="type">
+        Hotel Name
+
+     </div>
+     <div *ngFor="let hotel of hotelsNames" class="checkbox-item">
+        <label>
+        <input type="checkbox"
+               name="cities"
+               value="{{hotel.value}}"
+               [(ngModel)]="hotel.checked"
+               (change)="onHotelNameFilter()"
+
+               />
+        {{hotel.name}}
+      </label>
+    </div>
+</div>
+</div>

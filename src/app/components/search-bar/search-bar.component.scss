@@ -10,6 +10,9 @@
         padding: 10px;
     }
     .action{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
         // input::-webkit-calendar-picker-indicator {
         //     // padding-left: 100px;
         //     // border: 1px dashed red;
@@ -29,6 +32,7 @@
             border: 1px solid $borders-color;
             cursor: pointer;
             margin-left: 10px;
+            width: 250px;
 
          }
          .custom-input:focus{
@@ -38,5 +42,14 @@
          }
 
 
+    }
+
+    .search-btn{
+        color : white;
+        background-color:$btn-color ;
+        padding: 5px 20px;
+        border-radius: 4px;
+        align-self: center;
+        cursor: pointer;
     }
 }

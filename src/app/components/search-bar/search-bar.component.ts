@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit  ,EventEmitter, Output} from '@angular/core';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-search-bar',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
   
+faSearch = faSearch;
+public checkIn!:Date ;
+public checkOut!:Date ;
 
   constructor() { }
 
@@ -14,7 +18,12 @@ export class SearchBarComponent implements OnInit {
   }
 
   selectTime(event: any){
-    console.log(event.target.value)
+    event.target.name === 'check-in' ? 
+    this.checkIn = event.target.value :
+    this.checkOut = event.target.value
+
+
+
   }
 
 }

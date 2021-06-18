@@ -1,4 +1,10 @@
 <div>
+    <app-sort-bar 
+      (sortPriceAscending)="sortPriceAscending()" 
+      (sortPriceDescending)="sortPriceDscending()"
+      (sortAZNames)="sortAZnames()"
+      (sortZANames)="sortZAnames()"
+      ></app-sort-bar>
  <app-hotel-item 
    *ngFor="let hotel of hotels"
    [hotel] = "hotel"

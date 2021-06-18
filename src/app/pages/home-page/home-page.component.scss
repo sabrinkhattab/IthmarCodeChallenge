@@ -5,6 +5,7 @@
     margin: auto;
     margin-top: 20px;
     padding: 10px;
+    color : $text-color;
     .flex-wrapper{
         display: flex;
         flex-direction: column;
@@ -19,7 +20,6 @@
 
             .filter-section{
                 width: 30%;
-                border: 1px solid yellow;
                 display: flex;
                 flex-direction: column;
             }

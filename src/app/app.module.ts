@@ -8,9 +8,13 @@ import { PriceFilterComponent } from './components/price-filter/price-filter.com
 import { CheckBoxFilterComponent } from './components/check-box-filter/check-box-filter.component';
 import { HotelsListComponent } from './components/hotels-list/hotels-list.component';
 import { HotelItemComponent } from './components/hotels-list/hotel-item/hotel-item.component';
+import { SortBarComponent } from './components/hotels-list/sort-bar/sort-bar.component'
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{HttpClientModule} from '@angular/common/http';
-import { SortBarComponent } from './components/hotels-list/sort-bar/sort-bar.component'
+import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { SortBarComponent } from './components/hotels-list/sort-bar/sort-bar.com
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

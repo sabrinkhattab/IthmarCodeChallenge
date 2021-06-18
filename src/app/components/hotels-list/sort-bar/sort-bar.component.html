@@ -1,1 +1,6 @@
-<p>sort-bar works!</p>
+<div class="sort-bar-wrapper">
+ <div  (click)="onSortPriceDescending()" [ngClass]="{selected :sortingPriceHigh }" >High Price</div>
+ <div (click)="onSortPriceAscending()" [ngClass]="{selected :sortingPriceLow }">Low Price</div>
+ <div (click)="onSortAZnames()" [ngClass]="{selected :sortingAZnames }">A-Z Hotels</div>
+ <div (click)="onSortZAnames()" [ngClass]="{selected :sortingZAnames }">Z-A Hotels</div>
+</div>

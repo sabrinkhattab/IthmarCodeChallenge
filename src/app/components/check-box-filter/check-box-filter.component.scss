@@ -1,0 +1,18 @@
+@import "../../../scss/variables";
+
+.checkbox-filter-wrapper{
+    border: 1px solid $borders-color;
+    border-radius: 5px;
+
+    .type{
+        border-bottom: 1px solid $borders-color;
+        padding: 10px;
+        background-color: $headers-bg-color;
+        font-weight: 400;
+    }
+}
+.checkbox-item{
+    border-bottom: 1px solid $borders-color;
+    padding: 10px;
+    font-weight: 400;
+}

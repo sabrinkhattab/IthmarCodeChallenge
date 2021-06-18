@@ -3,24 +3,26 @@
         Search Hotel
     </div>
     <div class="action">
+        <div>
+            <input type="date"
+            data-placeholder="Check in" 
+            class="custom-input" 
+            (change)="selectTime($event)"
+            name="check-in"
+            value="checkIn"
+           
+            />
 
-
-        <input type="date"
-               data-placeholder="Check in" 
-               class="custom-input" 
-               (change)="selectTime($event)"
-               name="check-in"
-              
-               />
-
-        <input 
-          type="date" 
-          placeholder="Check out" 
-          class="custom-input"
-          name="check-out"
-
-          />
-        <!-- <button></button> -->
+     <input 
+       type="date" 
+       placeholder="Check out" 
+       class="custom-input"
+       name="check-out"
+       (change)="selectTime($event)"
+       value="checkOut"
+       />
+        </div>
+        <div class="search-btn">Search <fa-icon [icon]="faSearch"></fa-icon></div>
 
     </div>
 </div>
